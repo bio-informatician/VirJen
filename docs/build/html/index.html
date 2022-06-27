@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VirJen’s documentation! &mdash; virjen 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> virjen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">VirJen’s documentation!</a><ul>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#virjen-data-access">VirJen Data Access</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#database-features">Database features</a></li>
+<li><a class="reference internal" href="#database-structure-and-storage">Database structure and storage</a></li>
+<li><a class="reference internal" href="#data-access-levels-and-user-groups">Data access levels and user groups</a></li>
+<li><a class="reference internal" href="#private-workbench">Private workbench:</a></li>
+<li><a class="reference internal" href="#team-roles">Team Roles</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">virjen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>VirJen’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="virjen-s-documentation">
+<h1>VirJen’s documentation!<a class="headerlink" href="#virjen-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="virjen-data-access">
+<h2>VirJen Data Access<a class="headerlink" href="#virjen-data-access" title="Permalink to this heading"></a></h2>
+<p><strong>Project Name:</strong> VirJen DB
+<strong>Principal Investigator:</strong> Prof. Dr. Manja Marz (RNA Bioinformatics lab, Faculty of Mathematics and Computer Science, FSU Jena)
+<strong>Researcher(s):</strong> Noriko Cassman [Junior Group Leader (Postdoctoral Researcher), FSU Jena], Shahram Saghaei (PhD Student, FSU Jena)
+<strong>Collaborator(s):</strong> Kevin Lamkiewicz (Junior Group Leader, FSU Jena), Sandra Triebel (PhD Student, FSU Jena)
+<strong>Funding:</strong> NFDI4Microbiota</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h2>
+<p>The VirJen group (NFDI4Microbiota) based at FSU Jena aims to build a central virus database of all viruses[a] for use by the global research community, especially virologists, viral ecologists and others. We will do this by adopting or adapting existing database infrastructures (e.g. ViPR; <a class="reference external" href="https://www.viprbrc.org">https://www.viprbrc.org</a> [1]) and using international metadata standards in accordance with the FAIR principles. We plan to incorporate virus genomic and metagenomic sequences from public repositories e.g. from the European Nucleotide Archive (ENA, <a class="reference external" href="https://www.ebi.ac.uk/ena">https://www.ebi.ac.uk/ena</a>), the Sequence Read Archive (SRA, <a class="reference external" href="https://www.ncbi.nlm.nih.gov/sra">https://www.ncbi.nlm.nih.gov/sra</a>) and GenBank/NCBI viruses (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/labs/virus">https://www.ncbi.nlm.nih.gov/labs/virus</a> [2]). Further, we will offer curation, access, visualization, analysis, integration and sharing of user-uploaded virus data for a range of user access levels, ensuring data protection for embargoed or private datasets.</p>
+</section>
+<section id="database-features">
+<h2>Database features<a class="headerlink" href="#database-features" title="Permalink to this heading"></a></h2>
+<p>Key tools and services offered will be data curation, genome assembly and annotation, functional profiling, comparative genome analysis, homology search and orthology prediction, primer design and checking, taxonomic classification, and phylogenomics. VirJenDB will also facilitate the development of new tools and services such as host classification, consensus alignments, variation analysis, secondary structure alignments, quality control of existing data, manual curation and custom visualizations.  Additionally, training and education will be offered through the NFDI4Microbiota.</p>
+</section>
+<section id="database-structure-and-storage">
+<h2>Database structure and storage<a class="headerlink" href="#database-structure-and-storage" title="Permalink to this heading"></a></h2>
+<p>The VirJenDB will be composed of several different parts, 1) the Application Server, which will send and receive data from the Data Servers, which are 2) the File Server and 3) the Database Server, and 4) the Web Server, which will communicate with the Application Server and display the results of its requests on 5) the Web Interface.</p>
+<p>The 2) File Server (which can be one or more clusters/storage sites) will contain or reference all of the “large” data, including the public and private genomic sequences, images, etc. The 3) Database Server (which can also be one or more clusters/storage sites) will contain all of the user data, including user information and user activity logs. Each of these Data Servers will be backed up. See Figure 1 for a schematic.</p>
+<p>For VirJen, de.NBI Cloud (<a class="reference external" href="https://www.denbi.de/">https://www.denbi.de/</a>; University of Bielefeld and NFDI4Microbiota) will provide the storage space and backups needed for the Data Servers and/or 1) the Application Server and the 4) Web Server, in effect all of the parts.</p>
+<p>Figure 1. Network structure schematic which models the database architecture
+To be added</p>
+<p>Figure 2. Process flowchart schematic which models the flows between the database layers.
+To be added</p>
+</section>
+<section id="data-access-levels-and-user-groups">
+<h2>Data access levels and user groups<a class="headerlink" href="#data-access-levels-and-user-groups" title="Permalink to this heading"></a></h2>
+<p>The intention is to offer services for both publicly available data and private, user-uploaded data. Publicly available virus sequence data will be curated and made available through the web interface to all website visitors (public user). Various analysis tools will be available for use on the public data. There will also be an option on the web interface for visitors to register and subsequently (as a logged-in user) be able to work on their own data in a private workbench. On the private workbench, the user will be able to use a suite of tools on their own data as well as public data.</p>
+<p>The back-end (Parts 1 to 4 above) and front-end (Part 5) access will be restricted to provide layers of security to protect user data, including the data owned by users (ie virus data, stored on Part 2) and the data generated by user activity (ie user logs, stored on Part 3).</p>
+<p>Developer groups (see Figure 3)
+* Root: root user will not be used for development o data inspection
+* Admin: access, develop and manage Parts 1 to 3
+* Front-end Developer: access, develop and manage Parts 4 and 5
+* Data Curator: view, add and edit public data (access to Part 1)</p>
+<p>User groups (front-end users only):
+* Guest: view, analyze, visualize, share, download public data
+* Data owner: view, add and edit own private data, add/remove basic users
+* Basic user: view, add own data</p>
+</section>
+<section id="private-workbench">
+<h2>Private workbench:<a class="headerlink" href="#private-workbench" title="Permalink to this heading"></a></h2>
+<p>Logged in users will be able to upload their own virus data and metadata within one Project. With one or more projects, the user will be able to apply the tools on the VirJenDB platform to view, analyze, visualize, share, curate and download her own data from one or more projects.</p>
+<p>** figure to be added **</p>
+<p>Figure 3. User grouping table showing the viewing/editing rights of each user level for the back and front ends.</p>
+</section>
+<section id="team-roles">
+<h2>Team Roles<a class="headerlink" href="#team-roles" title="Permalink to this heading"></a></h2>
+<p>Currently, the NFDI4Microbiota-funded VirJenDB team is composed of the PI (Prof. Dr. Manja Marz), the Data Curator/Team Lead (Dr. Noriko Cassman) and the Developer (Shahram Saghaei, MSc.). The latter two roles correspond respectively to the Data Curator and Admin groups. There remains at least one role to be filled, namely that of the “Front-end developer,” corresponding with the Front-end Developer developer group. Further, the Collaborators will contribute to tool development and will work closely with the Admin to add tools to the VirJenDB platform.</p>
+</section>
+</section>
+<section id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this heading"></a></h1>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>ViPR: an open bioinformatics database and analysis resource for virology research Pickett BE, Sadat EL, Zhang Y, Noronha JM, Squires RB, Hunt V, Liu M, Kumar S, Zaremba S, Gu Z, Zhou L, Larson C, Dietrich J, Klem EB, Scheuermann RH. Nucleic Acids Res. 2011 Oct 17. [Epub ahead of print]. PMID: 22006842</p></li>
+<li><p>Virus Variation Resource - improved response to emergent viral outbreaks. Hatcher EL, Zhdanov SA, Bao Y, Blinkova O, Nawrocki EP, Ostapchuck Y, Schaffer AA, Brister JR. Nucleic Acids Res. 2017 Jan 4;45(D1):D482-D490. doi: 10.1093/nar/gkw1065. Epub 2016 Nov 28.</p></li>
+</ol>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Friedrich Schiller University Jena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
