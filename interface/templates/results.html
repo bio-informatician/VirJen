@@ -1,0 +1,46 @@
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Query Output Table</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active"><a href="/search">Search</a></li>
+        <li class="breadcrumb-item active">Result</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-body">
+            DataTables is a query result for requested filter.
+
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                      {% for header_item in theaders %}
+                        <th>{{ header_item }}</th>
+                      {% endfor %}
+                    </tr>
+                </thead>
+                {% for tcontent in tcontents %}
+                    <tr>
+                      {% for header_names in hlist %}
+
+                        {% if header_names == "fasta_location" %}
+
+                          <td><a href='/fasta?term={{tcontent["genome_id"]}}'>View</a></td>
+
+                        {% else %}
+
+                          <td>{{tcontent[header_names]}}</td>
+                        {% endif %}
+                      {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>

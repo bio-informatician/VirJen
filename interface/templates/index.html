@@ -1,0 +1,80 @@
+
+<div class="virus-image">
+  <div class="virus-text">
+    <h1 style="font-size:50px"><span> Make a query </span></h1>
+      <h3><span> A simple search through the virus database </span></h3>
+      </br>
+      <form class="d-none d-md-inline form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Enter the key word(s)..." aria-label="Enter the key word(s)..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+      </form>
+      <div><a href="/search" style="color: white; float: left;">Advanced</a></div>
+                      
+      </div>
+    </div>
+
+
+
+<div class="visual-data-index">
+
+
+
+
+
+
+<div id="particles-js"></div>
+
+<div class="text">
+  <h1 style="text-align: center;">VJDB Statistical Summary</h1><br/>
+  <div class="row ">
+                
+                  <div class="col-25"><button class='btn-lg btn-shm shadow' type="button" action="/page2"> 0 <br/># entries</button></div>
+                 <div class="col-25"><button class='btn-lg btn-success shadow' type="button" action="/page2"> 0 <br/># sequenes</button></div>
+                 <div class="col-25"><button class='btn-lg btn-secondary shadow' type="button" action="/page2"> 0 <br/> # total nt </button></div>
+                 <div class="col-25"><button class='btn-lg btn-primary shadow' type="button" action="/page2"> 0 <br/># species</button></div>
+
+</div>
+
+
+
+
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="static/js/particles.js"></script>
+<script src="static/js/app.js"></script>
+
+<!-- stats.js -->
+<script src="static/js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+</div>
+
+
+
+
+    
+  

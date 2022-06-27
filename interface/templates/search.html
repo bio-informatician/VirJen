@@ -1,0 +1,71 @@
+<div class="search-image">
+  <div class="virus-text">
+    <h1 style="font-size:50px"><span> Advanced search </span></h1>
+      </br>
+            
+        <form id="search-form" method="GET" action="/="  autocomplete="off" class="d-none d-md-inline form-inline ms-auto me-0 me-md-3 my-2 my-md-0 ">
+          <!-- genome id field -->
+          <div class="container ">
+            <p><span> Make a complex query using the desired term and pile them into the query box with Logical operators</span></p>
+              <div class="row  toast-header shadow">
+                
+                  <div class="col col-eq">
+                      <div class="labels"><label id="name-label" for="name">Term category: </label></div>
+                      <div>
+                          <select id="field-selector" class="adv-search-field field-selector form-select form-select mb-3">{% for i in tclist %}
+                              <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                          </select>
+                      </div>
+                  </div>
+
+                  <div class="col col-eq ">
+                      <div class="labels "><label id="name-label" for="name">Search term: </label></div>
+                      <div class="form-floating-lg mb-3"> <input autofocus type="text" name="search_term" id="search_term" class="form-control"  placeholder="Enter search term"></div>
+                  </div>
+
+                  <div class="col col-eq ">
+                      <div class="labels"><label id="name-label" for="name">Select the operand: </label></div>
+                      <select id="field-selector"  class="adv-search-field form-select form-select mb-3"> <option value="AND">add with AND</option><option value="OR">add with OR</option><option value="NOT">add with NOT</option>   </select>         
+                  </div>
+              </div><br/>
+              <div class="row toast-header shadow">
+                <div class="form-group ">
+                  <label for="querybox">Query box</label>
+                  <textarea class="form-control shadow" id="querybox" rows="3" placeholder=""></textarea>
+                </div>
+              </div><br/>
+              <div class="row toast-header shadow">
+                <p></p>
+                 <div class="col-eq"><button class='btn btn-outline-primary shadow' type="button" onclick="myFunction()">Add</button></div>
+                 <div class="col-eq"><button class='btn btn-outline-success shadow' type="button" onclick="myFunction()">Search</button></div>
+                 <div class="col-eq"><button  class='btn btn-outline-danger shadow' id="reset" type="reset" value="Reset">Reset</button></div>
+
+                <p id="qseq"></p>
+                  
+                  
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $("button").click(function() {
+                              
+                            // Here the value is stored in variable. 
+                            var x = $("input:text").val();
+                            document.getElementById("qseq").innerHTML = x;
+                            String textbx = document.getElementById("qseq")
+                            $("#querybox").attr("placeholder", "qseq");
+
+                        });
+                    });
+
+
+                </script>
+
+
+      
+
+  </div>
+                  <br/><div><a href="/index" style="color: purple; float: right;">Simple search</a></div>
+
+</div>            
+

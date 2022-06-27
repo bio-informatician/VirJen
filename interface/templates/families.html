@@ -1,0 +1,32 @@
+
+<div class="bluep-image">
+    
+      </br>
+      <div class="text">
+          <h1 style="text-align: center;">Browse a virus class based on taxonomy classifications</h1><br/><h3 style="text-align: left;">Virus Phylum:</h3>
+          <div class="row ">
+                <!div class="col-button" style="width:12%"><!/div>
+                {% for element in nlist %}
+                    {% for key,value in element.items() %}
+                    <div class="col-button"><button class='btn-lg shadow' type="button" action="/result" style="background-color:{{value}}; ">{{key}}</button></div>
+                    {% endfor %}
+                {% endfor %}
+
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
