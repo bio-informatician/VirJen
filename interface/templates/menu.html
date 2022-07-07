@@ -1,6 +1,6 @@
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-light " id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <a class="navbar-brand ps-3" href="/index">VirJen DB logo</a>
@@ -17,9 +17,9 @@
 
                             <div class="sb-sidenav-menu-heading">Learn</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open text-shrm"></i></div>
                                 Documentation
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down text-shrm"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
@@ -31,9 +31,9 @@
                             </div>
                             <div class="sb-sidenav-menu-heading">Browse</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBrowse" aria-expanded="false" aria-controls="collapseBrowse">
-                                <div class="sb-nav-link-icon"><i class="fas fa-list-alt"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-list-alt text-shrm"></i></div>
                                 Virus Categories 
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down text-shrm"></i></div>
                             </a>
                             <div class="collapse" id="collapseBrowse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
@@ -45,9 +45,9 @@
 
                             <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsesearch" aria-expanded="false" aria-controls="collapsesearch">
-                                <div class="sb-nav-link-icon"><i class="fas fa-search"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-search text-shrm"></i></div>
                                 Query
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down text-shrm"></i></div>
                             </a>
                             <div class="collapse" id="collapsesearch" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
@@ -59,9 +59,9 @@
 
                             <div class="sb-sidenav-menu-heading">Data Access</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsedownload" aria-expanded="false" aria-controls="collapsedownload">
-                                <div class="sb-nav-link-icon"><i class="fa fa-download"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa fa-download text-shrm"></i></div>
                                 Download
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down text-shrm"></i></div>
                             </a>
                             <div class="collapse" id="collapsedownload" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
@@ -82,7 +82,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="column right">
-                                    <a class=" dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                                    <a class=" dropdown-toggle text-shrm" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw btn-outline-shm"></i></a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
@@ -90,7 +90,7 @@
                                         {% if loggedin.loggedin %}
                                             <li><a class="dropdown-item" href="/logout">Logout</a></li>
                                         {% else %}
-                                            <li><a class="dropdown-item" href="/login">Login</a></li>
+                                            <li><a class="dropdown-item text-shrm" href="/login">Login</a></li>
                                         {% endif %}
                                     </ul>
                                 </div>
@@ -101,3 +101,6 @@
                 <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-0">
+
+
+              

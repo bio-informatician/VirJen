@@ -3216,12 +3216,12 @@ textarea.form-control-lg {
 .btn-shm {
   color: #fff;
   background-color: #563d7c;
-  border-color: ##6f42c1;
+  border-color: #6f42c1;
 }
 .btn-shm:hover {
   color: #fff;
   background-color: #6f42c1;
-  border-color: ##800080;
+  border-color: #800080;
 }
 .btn-check:focus + .btn-danger, .btn-danger:focus {
   color: #fff;
@@ -3462,6 +3462,17 @@ textarea.form-control-lg {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
+
+.btn-outline-shm {
+  color: #563d7c;
+  border-color: #6f42c1;
+}
+.btn-outline-shm:hover {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #6f42c1;
+}
+
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
@@ -7800,6 +7811,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-shrm {
+  --bs-text-opacity: 1;
+  color: #6f42c1 !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -11346,7 +11362,7 @@ body {
 #layoutSidenav #layoutSidenav_nav {
   flex-basis: 225px;
   flex-shrink: 0;
-  transition: transform 0.15s ease-in-out;
+  transition: transform 1s ease-in-out;
   z-index: 1038;
   transform: translateX(-225px);
 }
@@ -11378,13 +11394,14 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
+
 @media (min-width: 992px) {
   #layoutSidenav #layoutSidenav_nav {
     transform: translateX(0);
   }
   #layoutSidenav #layoutSidenav_content {
     margin-left: 0;
-    transition: margin 0.15s ease-in-out;
+    transition: margin 1s ease-in-out;
   }
 
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
@@ -11741,6 +11758,16 @@ body {
   position: relative;
 }
 
+.hbar {
+  background: #4e2020;
+  background: linear-gradient(to bottom right, #000 30%, #aaa 100%);
+  height: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 .virus-text {
   text-align: center;
   position: absolute;
@@ -11840,6 +11867,13 @@ canvas {
   font-family: 'Open Sans', sans-serif;
 }
 
+.overimage {
+  position: absolute;
+  top: 0.85;
+  margin-left: 0.85;
+  color: #fff;
+  background: #fff;
+} 
 
 a,
 a:visited {
@@ -11852,7 +11886,9 @@ a:focus {
   color: #ba160c;
 }
 
-
+a.headerlink {
+    visibility: hidden;
+}
 
 .bluep-image {
   background-image: url("../assets/bluep_1.jpg");
@@ -11862,4 +11898,17 @@ a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.document {
+    margin: 0 !important;
+    width: 100%;
+}
+
+.text-height-0 {
+  line-height: 0.3!important;
+}
+
+.text-height-2 {
+  line-height: 2!important;
 }

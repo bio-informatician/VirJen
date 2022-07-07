@@ -34,7 +34,12 @@ mysql = MySQL(app)
 @app.route('/index', methods =['GET', 'POST'])
 def index():
     page = 'index.html'
-    return render_template('template.html', page=page, loggedin = session)
+    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+    cursor.execute('SELECT COUNT(*), COUNT(DISTINCT sample.taxonomy_id) FROM sample;')
+    record_numbers = cursor.fetchone()
+    print(record_numbers)
+    table_data = [record_numbers['COUNT(*)'],0,0,record_numbers['COUNT(DISTINCT sample.taxonomy_id)']]
+    return render_template('template.html', page=page, loggedin = session, tableinfo = table_data)
 
 
 
